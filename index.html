@@ -1,79 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gadar 2 Movie Review</title>
-    <!-- Add your CSS file or style tags here to customize the appearance -->
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gadar 2 Movie Review</title>
 
-        h1 {
-            color: #333;
-            font-size: 28px;
-            margin-bottom: 10px;
-        }
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
 
-        p {
-            color: #555;
-            font-size: 16px;
-            line-height: 1.5;
-            margin-bottom: 15px;
-        }
+    h1 {
+      color: #333;
+      text-align: center;
+    }
 
-        .author {
-            font-size: 14px;
-            color: #888;
-        }
-    </style>
+    .review {
+      border: 1px solid #ccc;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .marquee {
+      overflow: hidden;
+      white-space: nowrap;
+      animation: marquee 20s linear infinite;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #555;
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-        <h1>Gadar 2 Movie Review</h1>
-    </header>
+  <h1>Gadar 2 Movie Review</h1>
 
-    <main>
-        <article>
-            <h2>Introduction</h2>
-            <p>
-                Start your blog post with an introduction to Gadar 2, highlighting its significance and any pre-existing knowledge about the original Gadar movie.
-            </p>
+  <div class="review">
+    <h2>Review Title</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis tincidunt porttitor.
+      Donec ultrices posuere volutpat. Phasellus mollis sagittis mi in efficitur. Duis euismod nisl ac
+      ultrices porta. Aenean pulvinar vestibulum tellus non cursus. Vestibulum mollis odio vel erat
+      laoreet efficitur.</p>
 
-            <h2>Plot Summary</h2>
-            <p>
-                Provide a brief summary of the movie's plot without giving away too many spoilers. Focus on the main narrative and key events that occur throughout the film.
-            </p>
+    <marquee behavior="scroll" direction="left" class="marquee">
+      <span>************ Gadar 2 is a must-watch movie! ************</span>
+    </marquee>
 
-            <h2>Performances</h2>
-            <p>
-                Discuss the performances of the actors in Gadar 2. Highlight any standout performances or notable contributions to the movie by the cast members.
-            </p>
+    <button class="btn" id="likeBtn">Like</button>
+    <button class="btn" id="dislikeBtn">Dislike</button>
+  </div>
 
-            <h2>Direction and Cinematography</h2>
-            <p>
-                Evaluate the direction and cinematography of Gadar 2. Discuss the visual style, camera work, and overall execution of the film's visuals.
-            </p>
+  <script>
+    // JavaScript code for event handling
+    const likeBtn = document.getElementById('likeBtn');
+    const dislikeBtn = document.getElementById('dislikeBtn');
 
-            <h2>Music and Soundtracks</h2>
-            <p>
-                Comment on the music and soundtracks used in the movie. Discuss the impact of the music on the storytelling and its overall effectiveness.
-            </p>
+    likeBtn.addEventListener('click', function() {
+      alert('You liked the movie!');
+    });
 
-            <h2>Conclusion</h2>
-            <p>
-                Summarize your overall thoughts and rating of Gadar 2. Provide a final verdict on whether the movie is worth watching and any personal recommendations you may have.
-            </p>
-
-            <p class="author">Written by: [Your Name]</p>
-        </article>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 Your Blog Name. All rights reserved.</p>
-    </footer>
+    dislikeBtn.addEventListener('click', function() {
+      alert('You disliked the movie!');
+    });
+  </script>
 </body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gadar 2 Movie Review</title>
+
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    .review {
+      border: 1px solid #ccc;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .marquee {
+      overflow: hidden;
+      white-space: nowrap;
+      animation: marquee 20s linear infinite;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Gadar 2 Movie Review</h1>
+
+  <div class="review">
+    <h2>Review Title</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis tincidunt porttitor.
+      Donec ultrices posuere volutpat. Phasellus mollis sagittis mi in efficitur. Duis euismod nisl ac
+      ultrices porta. Aenean pulvinar vestibulum tellus non cursus. Vestibulum mollis odio vel erat
+      laoreet efficitur.</p>
+
+    <marquee behavior="scroll" direction="left" class="marquee">
+      <span>************ Gadar 2 is a must-watch movie! ************</span>
+    </marquee>
+
+    <button class="btn" id="likeBtn">Like</button>
+    <button class="btn" id="dislikeBtn">Dislike</button>
+  </div>
+
+  <script>
+    // JavaScript code for event handling
+    const likeBtn = document.getElementById('likeBtn');
+    const dislikeBtn = document.getElementById('dislikeBtn');
+
+    likeBtn.addEventListener('click', function() {
+      alert('You liked the movie!');
+    });
+
+    dislikeBtn.addEventListener('click', function() {
+      alert('You disliked the movie!');
+    });
+  </script>
+</body>
+
 </html>
